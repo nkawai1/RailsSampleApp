@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsSampleApp</title>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,10 @@
   </head>
 
   <body>
+  	<body>
+    <%= render "layouts/header" %>
+    <div class="container py-4 px-0">
     <%= yield %>
+    </div>
   </body>
 </html>
